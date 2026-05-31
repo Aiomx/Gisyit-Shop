@@ -6,7 +6,43 @@ Designed for high-performance and fluid UX, **Gisyit Shop** supports multiple pr
 
 ---
 
-## 🚀 Key Features
+## � Interface Previews
+
+Here are some high-fidelity interface previews of the **Gisyit Shop** application:
+
+<p align="center">
+  <img src="png/01.png" width="100%" alt="Store Homepage & Sections"/>
+  <br>
+  <strong>Figure 1: Beautiful, responsive storefront featuring 5 major department sections with dynamic widgets.</strong>
+</p>
+
+<p align="center">
+  <img src="png/02.png" width="100%" alt="Product Details & Navigation"/>
+  <br>
+  <strong>Figure 2: Product layout showcasing dynamic pricing based on selected specification options and demo video player.</strong>
+</p>
+
+<p align="center">
+  <img src="png/03.png" width="100%" alt="Seamless Cart Interactions"/>
+  <br>
+  <strong>Figure 3: Interactive slide-out cart drawer supporting real-time count updates and anonymous checkout.</strong>
+</p>
+
+<p align="center">
+  <img src="png/04.png" width="100%" alt="Stripe Checkout Processing"/>
+  <br>
+  <strong>Figure 4: Secure and idempotent Stripe checkout pipeline featuring a 15-minute countdown reservation window.</strong>
+</p>
+
+<p align="center">
+  <img src="png/05.png" width="100%" alt="User Profile Dashboard"/>
+  <br>
+  <strong>Figure 5: Polished user dashboard displaying real-time order history, fulfillment logs, and authenticated file downloads.</strong>
+</p>
+
+---
+
+## �🚀 Key Features
 
 - **🌐 Omnichannel Digital & Physical Storefront**: Optimized directory modules across 5 major business sections:
   - **Apps Section**: Software, utilities, and design assets (with digital download or license key delivery).
