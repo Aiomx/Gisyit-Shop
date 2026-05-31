@@ -8,9 +8,9 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 // Environment variables for Supabase connection
-const SUPABASE_URL = process.env.SUPABASE_URL || "https://api.haokir.com";
+const SUPABASE_URL = process.env.SUPABASE_URL || "https://hydb.haokir.com";
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY ||
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzY0Nzc3NjAwLCJleHAiOjE5MjI1NDQwMDB9.JQekgxRZBzi_pl2iLLXJw5yllgB5iKSvTOzoY6kYw3E";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTc3OTI1NjMzOCwiZXhwIjoxOTM3MDQ0MzM4fQ.-nUuLQkkZWwBiLfi5H77unYierIrll0eO4wpH5ObBX0";
 
 // Singleton client instance
 let supabaseClient: SupabaseClient | null = null;
