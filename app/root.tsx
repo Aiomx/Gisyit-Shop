@@ -8,6 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import { ThemeProvider } from "./lib/theme";
+import { CommandPalette } from "./components/search";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -25,12 +27,32 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="zh-CN" data-theme="dark" className="dark" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        {/* Inline script to prevent theme flash - applies theme before React hydrates */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('store-theme') || 'dark';
+                  if (theme === 'light' || theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', theme);
+                    if (theme === 'dark') {
+                      document.documentElement.classList.add('dark');
+                    } else {
+                      document.documentElement.classList.remove('dark');
+                    }
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
       </head>
       <body>
         {children}
@@ -42,7 +64,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <ThemeProvider defaultTheme="dark">
+      <Outlet />
+      {/* Command Palette - Global quick search (⌘+K / Ctrl+K) */}
+      <CommandPalette />
+    </ThemeProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
