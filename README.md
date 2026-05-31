@@ -4,6 +4,10 @@ A highly polished, modern, enterprise-ready full-stack e-commerce store built on
 
 Designed for high-performance and fluid UX, **Gisyit Shop** supports multiple product delivery channels (Downloads, license keys, physical shipping, etc.) and caters to five major departments: Applications (Software), Games, Physical Goods, Overseas Agent Purchases, and AI Services.
 
+## 🎛️ Associated Dashboard
+This storefront works in conjunction with the primary administrative dashboard repository:
+- **Gisyit Studio Admin (Dashboard)**: [https://github.com/Aiomx/Gisyit-Shop-Dash](https://github.com/Aiomx/Gisyit-Shop-Dash)
+
 ---
 
 ## � Interface Previews
